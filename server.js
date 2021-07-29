@@ -3,8 +3,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT||5000;
-var server = require('http').createServer(app);
-var io = require('socket.io')(server);
+var io = require('socket.io')(app);
 var chat_msg = '';
 
 app.get('/', (req,res)=>{
