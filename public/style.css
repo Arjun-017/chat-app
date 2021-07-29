@@ -1,0 +1,71 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+:root{
+	--clr-red: #FD6666;
+	--clr-yellow: #FFED5D;
+}
+.container{
+	position:  absolute;
+	width: 100vw;
+	height:  100vh;
+	background: #333;
+	display: flex;
+	justify-content: center;
+}	
+.message-container{
+	position: absolute;
+	margin-top: min(750px,92vh);
+	width: min(90vw,450px);
+}
+.chat-container{
+	position: absolute;
+	border: 5px solid black;
+	width: min(450px, 90vw);
+	height: min(720px, 88vh);
+	margin-top: min(10px, 5vh);
+	background: #8A2387; 
+	background: -webkit-linear-gradient(to top, #F27121, #E94057, #8A2387); 
+	background: linear-gradient(to top, #F27121, #E94057, #8A2387); 
+}
+#msg-field{
+	width: min(80%,70vw);
+	height: 40px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0 0 0 10px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: min(20px,10vw);
+}
+#send-button{
+	width: min(80px, 18vw);
+	height: 40px;
+}
+#chat-panel{
+	list-style-type: none;
+}
+
+.list-recieve{
+    font-family: 'Overpass', sans-serif;
+	font-size: 30px;
+	padding: 5px;
+	box-sizing: border-box;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin: 5px;
+	background: var(--clr-red);
+}
+.list-send{
+    font-family: 'Overpass', sans-serif;
+	font-size: 30px;
+	padding: 5px;
+	box-sizing: border-box;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin: 5px;
+	background: var(--clr-yellow);
+}
